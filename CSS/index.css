@@ -16,6 +16,7 @@ button {
     left: 42%;
     transition: 0.5s all;
     animation: tilt 1.0s infinite ease-in-out;
+    
     }
     
   @keyframes tilt {
