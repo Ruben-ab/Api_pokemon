@@ -1,0 +1,117 @@
+button {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding-left: 30px;
+    cursor: pointer;
+    
+  }
+  
+  .pika {
+    position: absolute;
+    top: -100%;
+    left: 42%;
+    transition: 0.5s all;
+    animation: tilt 1.0s infinite ease-in-out;
+    }
+    
+  @keyframes tilt {
+      0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+    
+      50% {
+        transform: translate(-50%, -50%) rotate(10deg);
+      }
+    
+      100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+    }
+    
+  .pokeball {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    animation: rotate_4991 2s linear infinite;
+  }
+  
+  @keyframes rotate_4991 {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  button:hover .pika {
+    top: 80%;
+  }
+  
+  button:hover .pokeball {
+    animation: none;
+    transform: scale(0);
+  }
+  
+  button:hover .go {
+    color: transparent;
+  }
+  
+  .go {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  
+  .pword, .pword2 {
+    position: absolute;
+    font-size: 13px;
+    opacity: 0;
+    animation: pulse-animation_0011 1s infinite;
+  }
+  
+  @keyframes pulse-animation_0011 {
+    0% {
+      transform: rotateZ(-30deg) scale(1);
+    }
+  
+    50% {
+      transform: rotateZ(-30deg) scale(1.1);
+    }
+  
+    100% {
+      transform: rotateZ(-30deg) scale(1);
+    }
+  }
+  
+  .pword {
+    top: 30%;
+    left: 72%;
+  }
+  
+  .pword2 {
+    top: 55%;
+    left: 75%;
+  }
+  
+  button:hover .pword, button:hover .pword2 {
+    opacity: 1;
+  }
+  
+  body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: #f0e665 ;
+  }
+
+
+  

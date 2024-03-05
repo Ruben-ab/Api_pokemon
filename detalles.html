@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="detalles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <h1 id="heading"> Pokédex</h1>
+    <div class="button-container">
+        <button id="left-btn"><i class="fa fa-caret-left"></i></button>
+        <div class="pagination current-page">1</div>
+        <div class="pagination">2</div>
+        <div class="pagination">3</div>
+        <div class="pagination">4</div>
+        <div class="pagination">5</div>
+        <button id="right-btn"><i class="fa fa-caret-right"></i></button>
+    </div>
+    <div class="pokemon-container"></div>
+    
+      
+
+
+    <div class="pokemon-details-container" style="display: none;">
+        <div id="close-btn">X</div>
+        <div id="pokemon-details-content"></div>
+      </div>
+    <body>
+        <h1>Detalles del Pokémon</h1>
+        <div id="pokemonDetailsContainer"></div>
+        <script src="../JS/pokedex.js"></script>
+       
+</body>
+</html>
